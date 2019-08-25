@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9R8-Ru-xm6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bhartiya_Samvidhan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0F-Te-veS">
+                                <rect key="frame" x="20" y="22" width="374" height="665"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="665" id="HzB-Xz-zN2"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">The constitution of India is "Government of the people, by the people, for the people" - Abraham Lincoln
+
+The Constitution of India is the longest written constitution of any sovereign country in the world, containing 448 articles in 22 parts, 12 schedules and 118 amendments.
+
+The Constituent Assembly, which first met on December 9, 1946, took precisely 2 years, 11 months and 18 days to come up with the final draft.
+
+The drafting of the Constitution was finally complete on 26th November, 1949. But, it was legally enforced only after two months on 26th January, 1950. Which came to be known as the Republic Day.
+
+The Indian Constitution has also been hailed as one of the world's best Constitution because in 62 years of its adoption, it had been amended only 94 times. As of now, our Constitution has undergone a total of 100 amendments.
+
+</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">The original Constitution of India was handwritten by Prem Behari Narain Raizada in a flowing italic style with beautiful calligraphy. He used 254 pen-holder nibs of NO.303 and devoted his six months to complete the writing. He was allotted a room in Constitution House by the Government of India to execute the prominent work. Instead of charging any kind of remuneration, he had asked permission to write his name on every page of the constitution and the name of his grandfather with his name on the last page.</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCe-5R-miO">
+                                <rect key="frame" x="0.0" y="695" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.40577923259999998" green="0.81218274109999999" blue="0.57765977270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="PSt-dP-7XL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="START READING">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startReadingButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RP2-bY-FKI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bCe-5R-miO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="1" id="KyW-ER-eEq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l0F-Te-veS" secondAttribute="trailing" constant="20" id="apQ-tU-AGf"/>
+                            <constraint firstItem="l0F-Te-veS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="eK4-7m-Ebt"/>
+                            <constraint firstItem="l0F-Te-veS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jEQ-Hg-Ofm"/>
+                            <constraint firstItem="bCe-5R-miO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jgj-zV-bk4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bCe-5R-miO" secondAttribute="trailing" id="vmW-ML-hhh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="URQ-cb-acf"/>
+                    <connections>
+                        <segue destination="xDW-uw-jGf" kind="show" identifier="showPartListViewController" id="yvS-MT-WBG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="110"/>
+        </scene>
+        <!--Part List View Controller-->
+        <scene sceneID="ibx-Op-y7f">
+            <objects>
+                <viewController storyboardIdentifier="PartListViewController" id="xDW-uw-jGf" customClass="PartListViewController" customModule="Bhartiya_Samvidhan" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J24-kS-fjN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6UJ-41-TX7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xDW-uw-jGf" id="JUG-8e-eZz"/>
+                                    <outlet property="delegate" destination="xDW-uw-jGf" id="7aO-pA-TFg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6UJ-41-TX7" firstAttribute="leading" secondItem="JSD-y5-woy" secondAttribute="leading" id="BDD-WU-L1G"/>
+                            <constraint firstItem="6UJ-41-TX7" firstAttribute="top" secondItem="JSD-y5-woy" secondAttribute="top" id="Rzd-cw-Qyi"/>
+                            <constraint firstItem="JSD-y5-woy" firstAttribute="trailing" secondItem="6UJ-41-TX7" secondAttribute="trailing" id="dyC-hb-PmZ"/>
+                            <constraint firstItem="6UJ-41-TX7" firstAttribute="bottom" secondItem="JSD-y5-woy" secondAttribute="bottom" id="mAg-fC-s9E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JSD-y5-woy"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="6UJ-41-TX7" id="343-aR-TMI"/>
+                        <segue destination="bac-Ft-K3B" kind="show" identifier="showArticleListViewController" id="JGJ-NF-vKC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOo-43-7ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911.594202898551" y="110.49107142857143"/>
+        </scene>
+        <!--Article List View Controller-->
+        <scene sceneID="2mR-iR-J5R">
+            <objects>
+                <viewController storyboardIdentifier="ArticleListViewController" id="bac-Ft-K3B" customClass="ArticleListViewController" customModule="Bhartiya_Samvidhan" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SML-1l-y5o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wqR-ZI-yi9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bac-Ft-K3B" id="YKm-X4-RZ6"/>
+                                    <outlet property="delegate" destination="bac-Ft-K3B" id="Jcn-sO-cA5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wqR-ZI-yi9" firstAttribute="top" secondItem="aBS-fn-kve" secondAttribute="top" id="B4a-7D-rK9"/>
+                            <constraint firstItem="wqR-ZI-yi9" firstAttribute="leading" secondItem="aBS-fn-kve" secondAttribute="leading" id="KG2-o3-YJS"/>
+                            <constraint firstItem="wqR-ZI-yi9" firstAttribute="bottom" secondItem="aBS-fn-kve" secondAttribute="bottom" id="P0c-U4-1AV"/>
+                            <constraint firstItem="wqR-ZI-yi9" firstAttribute="trailing" secondItem="aBS-fn-kve" secondAttribute="trailing" id="PXX-md-iRo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aBS-fn-kve"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="wqR-ZI-yi9" id="gxk-8L-3FM"/>
+                        <segue destination="dFZ-Or-IRF" kind="show" identifier="showArticleDetailsViewController" id="UZV-rI-mvN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S43-6Z-y4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2906" y="110"/>
+        </scene>
+        <!--Article Details View Controller-->
+        <scene sceneID="h3A-8b-AO3">
+            <objects>
+                <viewController storyboardIdentifier="ArticleDetailsViewController" id="dFZ-Or-IRF" customClass="ArticleDetailsViewController" customModule="Bhartiya_Samvidhan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qw9-Bj-CjP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSM-RD-udP">
+                                <rect key="frame" x="20" y="203" width="374" height="571"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="571" id="G5l-Px-GRk"/>
+                                </constraints>
+                                <string key="text">(1) India, that is Bharat, shall be a Union of States.
+(2) The States and the territories thereof shall be as specified in the First Schedule. 
+(3) The territory of India shall comprise :
+* (a) the territories of the States
+* (b) the Union territories specified in the First Schedule; and] 
+* (c) such other territories as may be acquired.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PART I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gue-cN-JmC">
+                                <rect key="frame" x="20" y="23" width="374" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Cvv-R3-OnS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="THE UNION AND ITS TERRITORY" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6d-RF-IkP">
+                                <rect key="frame" x="20" y="52" width="374" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="hLF-q0-jJc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="1. Name and territory of the Union." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-J7-6TN">
+                                <rect key="frame" x="20" y="100" width="374" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="wBb-Bi-Qce"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U6d-RF-IkP" firstAttribute="leading" secondItem="6BB-rW-mhh" secondAttribute="leading" constant="20" id="1l4-GW-0oz"/>
+                            <constraint firstItem="wSM-RD-udP" firstAttribute="top" secondItem="dbM-J7-6TN" secondAttribute="bottom" constant="48" id="CgM-Um-Jah"/>
+                            <constraint firstItem="dbM-J7-6TN" firstAttribute="leading" secondItem="6BB-rW-mhh" secondAttribute="leading" constant="20" id="Hou-se-2U1"/>
+                            <constraint firstItem="wSM-RD-udP" firstAttribute="leading" secondItem="6BB-rW-mhh" secondAttribute="leading" constant="20" id="MDm-QS-uhq"/>
+                            <constraint firstItem="gue-cN-JmC" firstAttribute="leading" secondItem="6BB-rW-mhh" secondAttribute="leading" constant="20" id="SOO-5d-vXu"/>
+                            <constraint firstItem="6BB-rW-mhh" firstAttribute="trailing" secondItem="wSM-RD-udP" secondAttribute="trailing" constant="20" id="X0b-YP-dnG"/>
+                            <constraint firstItem="6BB-rW-mhh" firstAttribute="trailing" secondItem="gue-cN-JmC" secondAttribute="trailing" constant="20" id="YAe-eD-6va"/>
+                            <constraint firstItem="gue-cN-JmC" firstAttribute="top" secondItem="6BB-rW-mhh" secondAttribute="top" constant="23" id="lAA-L6-mjw"/>
+                            <constraint firstItem="U6d-RF-IkP" firstAttribute="top" secondItem="gue-cN-JmC" secondAttribute="bottom" constant="12" id="lU1-9f-zfr"/>
+                            <constraint firstItem="dbM-J7-6TN" firstAttribute="top" secondItem="U6d-RF-IkP" secondAttribute="bottom" constant="-7" id="rZK-hH-Ssw"/>
+                            <constraint firstItem="6BB-rW-mhh" firstAttribute="trailing" secondItem="U6d-RF-IkP" secondAttribute="trailing" constant="20" id="sHh-Si-k5S"/>
+                            <constraint firstItem="6BB-rW-mhh" firstAttribute="trailing" secondItem="dbM-J7-6TN" secondAttribute="trailing" constant="20" id="wPG-18-jSx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6BB-rW-mhh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6p1-79-4cz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3872" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R4d-7j-R23">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9R8-Ru-xm6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage=" " id="QLc-X3-ZCN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cay-lf-JHE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9h-L4-fgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name=" " width="16" height="16"/>
+    </resources>
+</document>
